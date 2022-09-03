@@ -153,19 +153,21 @@ function esPositivo(numero) {
   // Tu código:
 }
 
-function agregarSimboloExclamacion(str) {
+function agregarSimboloExclamacion(hola) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+return hola + "!";
 }
 
-function combinarNombres(nombre, apellido) {
+function combinarNombres(sergio, perez) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Cristian" -> "Soy Cristian"
   // Tu código:
+  return sergio + " " + perez;
 }
 
-function obtenerSaludo(nombre) {
+function obtenerSaludo(pablo) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Nahuel" -> "Hola Nahuel!"
   // Tu código:
