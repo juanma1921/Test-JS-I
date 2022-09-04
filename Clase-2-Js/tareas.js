@@ -151,6 +151,16 @@ function esPositivo(numero) {
   // Si el número es negativo, devolver ---> "Es negativo"
   // Si el número es 0, devuelve false
   // Tu código:
+  if (numero>0){
+    return "Es positivo";
+
+  } else if (numero<0){
+    return "Es negativo";
+
+  } else {
+    return false;
+
+  }
 }
 
 function agregarSimboloExclamacion(hola) {
@@ -171,6 +181,7 @@ function obtenerSaludo(pablo) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Nahuel" -> "Hola Nahuel!"
   // Tu código:
+  return "Hola " + pablo + "!";
 }
 
 function deEuroAdolar(euro) {
