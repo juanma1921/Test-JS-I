@@ -186,7 +186,13 @@ function esVerdadero(valor) {
 function tieneTresDigitos(numero) {
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí:
-  
+  if (numero < 0) {
+    numero = numero*(-1);
+  } else if (numero >= 100 && numero <= 999) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 // ---------- Puntos extra ----------
@@ -198,6 +204,15 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   // Tu código:
+  if (numero == 0 || numero == 1 || numero == 4) {
+    return false;
+  }
+  for (var i = 2; i < numero; i++) {
+    if (numero % i === 0) {
+      return false;
+    }
+  }
+  return numero !== 1;
 }
 
 function doWhile(numero) {
@@ -205,6 +220,12 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
   //Tu código:
+  contador = 0;
+  do {
+    numero = numero + 5;
+    contador++;
+  } while (contador<8);
+  return numero;
 }
 
 // No modificar nada debajo de esta línea, sino no correrán los test.
