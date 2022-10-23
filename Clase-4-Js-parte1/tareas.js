@@ -147,19 +147,47 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí:
-} 
+    for (let i = 0; i < arreglo.length; i++) {
+        const element = arreglo[i];
+        count = 1
+
+        if (arreglo[count] == element) {
+            return true
+        } else {
+
+            return false
+        }
+        count++
+    }
+}
 
 function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
+  var cont = 0;
+  var newArray = [];
+
+  for (let i = 0; i < array.length; i++) {
+    array[i].includes("Enero") || array[i].includes("Marzo") || array[i].includes("Noviembre") ?
+      newArray.push(array[i]) && cont++ : false;
+  }
+  return cont !== 3 ? "No se encontraron los meses pedidos" : newArray;
 }
 
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  let nuevArray = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > 100) {
+      nuevArray.push(array[i])
+    }
+  }
+  return nuevArray;
 }
 
 // No modificar nada debajo de esta línea, de lo contrario no correrán los test.
